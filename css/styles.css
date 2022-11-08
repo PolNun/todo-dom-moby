@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #001;
+    color: #EEE;
+}
+
+.create-task-form {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 30px 10px;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+.create-task-form input {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 5px;
+    height: 1.8em;
+}
+
+.create-task-form button {
+    background-color: #003;
+    padding: 0.5em;
+    align-self: flex-end;
+    border: none;
+    border-radius: 5px;
+    color: #EEE;
+    cursor: pointer;
+}
+
+.task-info-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px;
+}
+
+.task-info-container > div {
+    background-color: #005;
+    width: 100%;
+    margin: 10px;
+    padding: 0.5em 0;
+    border-radius: 5px;
+}
+
+.today-tasks {
+    background-color: #222;
+    padding: 1em;
+    margin: 30px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.task-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #005;
+    border-radius: 5px;
+}
+
+.task-body button {
+    background-color: transparent;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    color: #EEE;
+    cursor: pointer;
+    outline: none;
+}
