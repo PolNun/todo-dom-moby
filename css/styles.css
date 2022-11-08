@@ -12,7 +12,7 @@ body {
     color: #EEE;
 }
 
-.create-task-form {
+.create-task {
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
     border-radius: 5px;
 }
 
-.create-task-form input {
+.create-task input {
     padding: 0.5em;
     margin: 0.5em 0;
     border: none;
@@ -30,7 +30,7 @@ body {
     height: 1.8em;
 }
 
-.create-task-form button {
+.create-task button {
     background-color: #003;
     padding: 0.5em;
     align-self: flex-end;
@@ -55,7 +55,7 @@ body {
     border-radius: 5px;
 }
 
-.today-tasks {
+.current-tasks {
     background-color: #222;
     padding: 1em;
     margin: 30px 10px;
@@ -66,21 +66,8 @@ body {
     height: 300px;
 }
 
-.task-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.card {
     background-color: #005;
-    border-radius: 5px;
-}
-
-.task-body button {
-    background-color: transparent;
+    margin: 10px 0;
     padding: 0.5em;
-    border: none;
-    border-radius: 5px;
-    color: #EEE;
-    cursor: pointer;
-    outline: none;
 }

@@ -14,36 +14,32 @@
 <body>
     <h5 class="text-center">Tareas</h5>
     <div class="container">
-        <form class="create-task-form">
+        <div class="create-task">
             <label for="task">Escribí la tarea que desees crear</label>
-            <input type="text" name="task" id="task" placeholder="Escribe una tarea">
+            <input type="text" name="taskTitle" id="taskTitle" placeholder="Acá va el título de la tarea">
+            <input type="text" name="taskBody" id="taskBody" placeholder="Acá va el cuerpo de la tarea">
             <button id="btnAddTask">Agregar</button>
-        </form>
+        </div>
     </div>
 
     <div class="task-info-container">
         <div class="total-task">
-            <span id="totalTasks">0 </span>
+            <span id="totalTasks"></span>
             <p>Total</p>
         </div>
         <div class="pending-task">
-            <span id="pendingTasks">0 </span>
+            <span id="pendingTasks"></span>
             <p>En curso</p>
         </div>
         <div class="completed-task">
-            <span id="finishedTasks">0 </span>
+            <span id="finishedTasks"></span>
             <p>Finalizadas</p>
         </div>
     </div>
 
-    <div class="today-tasks">
+    <div class="current-tasks">
         <p>Hoy, <span id="spanCurrentDate"></span></p>
-        <div class="task-body">
-            <div class="checkbox">
-                <input type="checkbox" name="finishTask" id="finishTask">
-            </div>
-            <p id="taskTitle">Comprar pan</p>
-            <button id="btnDeleteTask"><i class="fa-solid fa-trash-can"></i></button>
+        <div id="tasksContainer">
         </div>
     </div>
 
