@@ -4,6 +4,7 @@ const taskBody = document.querySelector('#taskBody');
 const tasksContainer = document.querySelector('#tasksContainer');
 const btnDeleteTask = document.querySelectorAll('#btnDeleteTask');
 const totalTasksElement = document.querySelector('#totalTasks');
+let totalTasks = 0;
 const pendingTasksElement = document.querySelector('#pendingTasks');
 const finishedTasksElement = document.querySelector('#finishedTasks');
 let finishedTasks = 0;
@@ -24,8 +25,9 @@ const addTask = (e) => {
     taskTitle.value = '';
     taskBody.value = '';
     localStorage.setItem('tasks', JSON.stringify(tasks));
-    totalTasksElement.innerHTML = tasks.length;
     pendingTasksElement.innerHTML = tasks.length;
+    totalTasks++;
+    totalTasksElement.innerHTML = totalTasks;
 }
 
 const renderTasks = () => {
