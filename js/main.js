@@ -43,4 +43,13 @@ const renderTasks = () => {
     });
 }
 
+const finishTask = (index) => {
+    tasks.splice(index, 1);
+    renderTasks();
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    finishedTasks++;
+    finishedTasksElement.innerHTML = finishedTasks;
+    pendingTasksElement.innerHTML = tasks.length;
+}
+
 btnAddTask.addEventListener('click', addTask);
