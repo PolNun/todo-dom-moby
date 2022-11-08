@@ -15,10 +15,12 @@
     <h5 class="text-center">Tareas</h5>
     <div class="container">
         <div class="create-task">
-            <label for="task">Escribí la tarea que desees crear</label>
+            <label for="taskTitle">Escribí la tarea que desees crear</label>
             <input type="text" name="taskTitle" id="taskTitle" placeholder="Acá va el título de la tarea">
+            <label for="taskBody"></label>
             <input type="text" name="taskBody" id="taskBody" placeholder="Acá va el cuerpo de la tarea">
             <button id="btnAddTask">Agregar</button>
+            <span class="spanErrorMessage"></span>
         </div>
     </div>
 
@@ -38,7 +40,7 @@
     </div>
 
     <div class="current-tasks">
-        <p>Hoy, <span id="spanCurrentDate"></span></p>
+        <span id="spanCurrentDate"></span>
         <div id="tasksContainer">
         </div>
     </div>

@@ -40,6 +40,10 @@ body {
     cursor: pointer;
 }
 
+.spanErrorMessage {
+    color: red;
+}
+
 .task-info-container {
     text-align: center;
     display: flex;
@@ -62,7 +66,7 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 300px;
 }
 
@@ -70,4 +74,12 @@ body {
     background-color: #005;
     margin: 10px 0;
     padding: 0.5em;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-weight: lighter;
 }
